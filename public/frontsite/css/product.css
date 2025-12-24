@@ -1,0 +1,172 @@
+.group{
+    margin: 190px 0 0;
+}
+.small-container {
+    max-width: 1080px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+.row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.small-container .row-2{
+    justify-content: space-between;
+    margin: 100px auto 50px ;
+    flex-wrap: nowrap;
+}
+.col-2{
+    flex-basis: 50%;
+    min-width: 300px;
+    padding: 20px;
+}
+.col-2 img{
+    max-width: 100%;
+    padding: 50px 0;
+}
+.small-img-row{
+    display: flex;
+    justify-content: space-between;
+}
+.small-img-col{
+    flex-basis: 24%;
+    cursor: pointer;
+}
+.group .col-2:last-child{
+    padding: 100px 20px;
+}
+.col-2 h1{
+    font-weight: bold;
+}
+.group h4{
+    margin: 20px 0;
+    font-size: 22px;
+    font-weight: bold;
+}
+.col-2 .fa-indent{
+    color: var(--main-color);
+    padding-left: 10px;
+}
+.col-2 .fa-indent:hover{
+    cursor: pointer;
+}
+.group .btn-primary{
+    background-color: var(--main-color);
+    border: 1 px solid var(--main-color);
+    color: white;
+}
+.group .btn-second{
+    border: 1px solid var(--main-color);
+    color: var(--animation-color);
+}
+.row-2 .heading {
+    font-size: 24px; /* Adjust font size */
+    color: var(--main-color); /* Use the primary color */
+    margin: 25px 0; /* Remove default margins */
+    width: fit-content;
+}
+.row-2 .para {
+    font-size: 16px; /* Adjust font size */
+    margin: 0; /* Remove default margins */
+    color: var(--animation-color);
+    text-align: right; /* Align text to the right */
+    transition: color 0.3s ease;
+    text-align: left;
+    overflow: hidden;
+    display: block;
+    width: fit-content;
+}
+.row-2 .para:hover {
+    color: var(--main-color); /* Change color on hover */
+    text-decoration: underline; /* Add underline on hover */
+}
+.col-4 {
+    flex-basis: 25%;
+    padding: 10px;
+    min-width: 200px;
+    margin-bottom: 50px;
+    cursor: pointer;
+    transition: transform 0.5s;
+}
+.col-4:hover {
+    transform: translateY(-5px)
+}
+.col-4 img {
+    width: 100%;
+}
+.rating .fa-star {
+    color: var(--second-color);
+}
+.title {
+    text-align: center;
+    margin: 0 auto 80px;
+    position: relative;
+    line-height: 60px;
+    color: var(--animation-color);
+}
+.product h4 {
+    font-weight: normal;
+}
+p{
+    font-size: 14px;
+}
+.group .btn-facebook {
+    background-color: #3b5998;
+    color: white;
+    margin-left: 5px;
+}
+.group .btn-whatsUp{
+    background-color: #25D366;
+    color: white;
+    margin-left: 5px;
+}
+.group .btn-telegram{
+    background-color: #24A1DE;
+    color: white;
+    margin-left: 5px;
+}
+.group .btn-outline-copy{
+    background-color: #424141;
+    color: white;
+    margin-left: 5px;
+}
+.group .btn-facebook:hover,
+.group .btn-whatsUp:hover,
+.group .btn-telegram:hover,
+.group .btn-outline-copy:hover,
+.group .btn-primary:hover,
+.group .btn-second:hover{
+    transform: translateY(-5px)
+}
+/* Small */
+@media(max-width: 992px) {
+    .product .row {
+        text-align: center;
+    }
+
+    .product .col-4 {
+        flex-basis: 50%;
+    }
+
+    .product .buttons {
+        display: flex;
+        flex-basis: 100%;
+    }
+}
+@media(max-width: 768px) {
+    .product .row {
+        text-align: center;
+    }
+
+    .product .col-4 {
+        flex-basis: 100%;
+    }
+
+    .product .buttons {
+        display: flex;
+        flex-basis: 100%;
+    }
+}

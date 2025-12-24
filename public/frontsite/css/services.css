@@ -1,0 +1,200 @@
+h1{
+    padding-top: var(--section-padding);
+    padding-bottom: var(--section-padding);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    top: 130px;
+    color: var(--animation-color);
+}
+/* Start Service1 */
+.group{
+    padding-bottom: var(--section-padding);
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+.service .boxes{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.service .boxes .box{
+    background-color: var(--second-color);
+    position: relative;
+    display: flex;
+    align-items: baseline;
+    padding: 10px 10px;
+    margin: 10px;
+    border-radius: 5px;
+    box-shadow: var(--box-shadow);
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+}
+/* Medium*/
+@media(min-width:992px){
+    .service .boxes .box{
+        flex-basis: 30.33%;
+    }
+}
+/* Small */
+@media(max-width: 768px){
+    .service .boxes .box{
+        flex-basis: 100%;
+    }
+}
+.service .boxes .box .title{
+    display: flex;
+    align-items: center
+}
+.service .boxes .box:hover {
+    background-color: #002639;
+}
+@keyframes bounce {
+    0% {
+        transform: scale(1);
+    }
+    30% {
+        transform: scale(1.1);
+    }
+    50% {
+        transform: scale(0.95);
+    }
+    70% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.box:active {
+    animation: bounce 0.5s ease;
+}
+.service .boxes .box i{
+    margin: 10px;
+}
+.service .boxes .box h3{
+    margin-right: 30px;
+    white-space: nowrap;
+    color: white;
+}
+/* Start Explanation */
+.group .set{
+    padding: 0 20px;
+    background: url('/images/background.jpg');
+    background-size: cover;
+    position: relative;
+    color: black;
+}
+.group .set::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.8);
+    z-index: 1;
+}
+.group .set h2, .group .set h3, .group .set p {
+    position: relative;
+    z-index: 2;
+}
+.group .set h2{
+    color: var(--main-color);
+    font-size: 32px;
+}
+.group .set h3{
+    color: var(--second-color);
+    font-size: 20px;
+}
+.group .set p{
+    font-size: 16px;
+}
+/* End Explanation */
+/* Start Contact */
+.container{
+    padding-top: var(--section-padding);
+    padding-bottom: var(--section-padding);
+}
+.container .contact{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 20px;
+    padding: 20px;
+}
+.container .contact .whatsup{
+    margin: 0 100px;
+}
+.container .contact i{
+    font-size: 50px;
+}
+.container .contact a{
+    color: var(--second-color);
+    font-size: 30px;
+    text-decoration: none;
+}
+.container .contact a:hover{
+    color: var(--animation-color);
+}
+.container .contact p{
+    font-weight: 600;
+}
+.container .row .btn-primary{
+    background-color: var(--main-color);
+    border: none;
+}
+.container .row .btn-primary:hover,
+.container .browse{
+    transform: translateY(-5px);
+}
+/* End Contact */
+/* Start Select Services  */
+.row .form-check-label .form-label{
+    padding-top: 30px;
+    padding-bottom: 10px;
+    color: var(--main-color);
+}
+.select-service h3{
+    padding-top: 30px;
+    padding-bottom: 10px;
+    color: var(--main-color);
+}
+/* End Select Services  */
+/* Start Browse ProjectS */
+.container .browse{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.container .browse h3{
+    color: var(--animation-color);
+}
+.container .browse .btn-primary{
+    box-shadow: var(--box-shadow);
+}
+@media(max-width:768px){
+    .container .browse{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+        text-align: center;
+    }
+}
+/* End Browse ProjectS */
+/* Start Contact_us */
+.group1{
+    padding-top: var(--section-padding);
+    padding-bottom: var(--section-padding);
+}
+/* End Contact_us */
