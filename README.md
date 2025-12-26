@@ -9,6 +9,16 @@ This project is an *Engineers Management System* built with *Laravel*. It connec
 *Database:* MySQL
 
 ## 3. How to Build and Run using Docker
+
+## 🚀 Bonus Task: Docker Compose (Bonus A)
+I have added a `docker-compose.yml` file to make it easier for developers to run the entire environment with a single command.
+
+**How to run using Docker Compose:**
+```bash
+docker-compose up -d 
+
+OR 
+
 Follow these clear steps to run the project in minutes:
 
 docker build -t engineers-app .

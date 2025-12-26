@@ -1,0 +1,17 @@
+version: '3.8'
+
+services:
+  # تعريف خدمة التطبيق
+  app:
+    build: .
+    container_name: engineers-app-container
+    ports:
+      - "8000:8000"
+    volumes:
+      - .:/var/www
+    networks:
+      - engineers-network
+
+networks:
+  engineers-network:
+    driver: bridge
